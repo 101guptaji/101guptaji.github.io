@@ -254,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("../img/hero-HG.png"), -webkit-linear-gradient(bottom, #e4e4e4, #ffffff);
   background-image: url("../img/hero-HG.png"), -moz-linear-gradient(bottom, #e4e4e4, #ffffff);
   background-image: url("../img/hero-HG.png"), linear-gradient(to top, #e4e4e4, #ffffff);
-  background-position: top left;
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
