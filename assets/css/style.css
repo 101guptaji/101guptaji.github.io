@@ -247,14 +247,14 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-/*#hero {
+#hero {
   width: 100%;
   height: 100vh;
   background: #fff;
-  background-image: url("../img/hero-bg.png"), -webkit-linear-gradient(bottom, #e4e4e4, #ffffff);
-  background-image: url("../img/hero-bg.png"), -moz-linear-gradient(bottom, #e4e4e4, #ffffff);
-  background-image: url("../img/hero-bg.png"), linear-gradient(to top, #e4e4e4, #ffffff);
-  background-position: top right;
+  background-image: url("../img/hero-HG.png"), -webkit-linear-gradient(bottom, #e4e4e4, #ffffff);
+  background-image: url("../img/hero-HG.png"), -moz-linear-gradient(bottom, #e4e4e4, #ffffff);
+  background-image: url("../img/hero-HG.png"), linear-gradient(to top, #e4e4e4, #ffffff);
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -265,14 +265,14 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 160px;
   }
 }
-*/
 
-#hero {
+
+/* #hero {
 	width: 100%;
 	height: 100vh;
 	background-color: lightgray;
 	text-align: center;
-}
+} 
 #hero:before {
   content: "";
   background: rgba(255, 255, 255, 0.6);
@@ -281,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
-}
+}*/
 
 #hero h1 {
   margin: 0;
