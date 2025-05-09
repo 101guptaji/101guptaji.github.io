@@ -9,7 +9,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
-  
+
 }
 
 a {
@@ -21,7 +21,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -51,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #2f9c84;
+  background: #1c3172;
   transition: background 0.2s ease-in-out;
 }
 
@@ -88,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -97,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -150,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
-.nav-menu > ul > li {
+.nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
 }
@@ -184,27 +191,34 @@ h1, h2, h3, h4, h5, h6 {
   .nav-menu a {
     width: 56px;
   }
+
   .nav-menu a span {
     display: none;
     color: #fff;
   }
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
   color: #fff;
-  background: #2c3033;
+  background: #1c3172;
 }
 
-.nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
+.nav-menu a:hover span,
+.nav-menu .active>a span,
+.nav-menu li:hover>a span {
   color: #fff;
 }
 
-.nav-menu a:hover, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu li:hover>a {
   width: 100%;
   color: #fff;
 }
 
-.nav-menu a:hover span, .nav-menu li:hover > a span {
+.nav-menu a:hover span,
+.nav-menu li:hover>a span {
   display: block;
 }
 
@@ -229,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i:hover {
-  color: #2f9c84;
+  color: #1c3172;
 }
 
 .mobile-nav-active {
@@ -241,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #2f9c84;
+  color: #1c3172;
 }
 
 /*--------------------------------------------------------------
@@ -251,9 +265,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   background: #fff;
-  background-image: url("../img/hero-HG.png"), -webkit-linear-gradient(bottom, #e4e4e4, #ffffff);
-  background-image: url("../img/hero-HG.png"), -moz-linear-gradient(bottom, #e4e4e4, #ffffff);
-  background-image: url("../img/hero-HG.png"), linear-gradient(to top, #e4e4e4, #ffffff);
+  background-image: url("../img/hero-bg-flower.jpg"), -webkit-linear-gradient(bottom, #e4e4e4, #ffffff);
+  background-image: url("../img/hero-bg-flower.jpg"), -moz-linear-gradient(bottom, #e4e4e4, #ffffff);
+  background-image: url("../img/hero-bg-flower.jpg"), linear-gradient(to top, #e4e4e4, #ffffff);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,13 +276,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
   #hero {
-    padding-left: 160px;
+    text-align: center;
   }
 }
 
-@media(max-width: 768px){
-  #hero{
-    background-image: none;
+@media(max-width: 768px) {
+  #hero {
+    background-image: url("../img/hero-bg-flower.jpg");
+    object-fit: cover;
   }
 }
 
@@ -294,29 +309,29 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #fff;
 }
 
 #hero h1:hover {
   background: #1EDB7D;
-	background: -webkit-linear-gradient(bottom,#1EDB7D,#0EE7DB);
-	background: -moz-linear-gradient(bottom,#1EDB7D,#0EE7DB);
-	background: linear-gradient(to top,#1EDB7D,#0EE7DB);
-	color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
-	transition: color .2s ease-out;
+  background: -webkit-linear-gradient(bottom, #1EDB7D, #0EE7DB);
+  background: -moz-linear-gradient(bottom, #1EDB7D, #0EE7DB);
+  background: linear-gradient(to top, #1EDB7D, #0EE7DB);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: color .2s ease-out;
 }
 
 #hero p {
-  color: #45505b;
+  color: #fff;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #2f9c84;
+  color: #2f7b9c;
   letter-spacing: 1px;
 }
 
@@ -327,24 +342,26 @@ h1, h2, h3, h4, h5, h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: #fff;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-  color: #2f9c84;
+  color: #2f869c;
 }
 
 @media (max-width: 992px) {
   #hero {
     text-align: center;
   }
+
   #hero h1 {
     font-size: 32px;
     line-height: 36px;
   }
+
   #hero p {
     margin-top: 10px;
     font-size: 20px;
@@ -442,15 +459,15 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #2f9c84;
+  color: #1c3172;
 }
 
 .about .content ul a {
-  color: #2f9c84;
+  color: #1c3172;
 }
 
 .about .content .badge-dark {
-  background-color: #2f9c84;
+  background-color: #1c3172;
 }
 
 .about .content p:last-child {
@@ -506,15 +523,17 @@ section {
 }
 
 #edu p .badge-dark {
-  color: #2f9c84;
+  color: #1c3172;
   background-color: #fff;
 }
 
-#edu .carousel-control-prev, #edu .carousel-control-next {
+#edu .carousel-control-prev,
+#edu .carousel-control-next {
   width: 10%;
 }
 
-#edu .carousel-control-next-icon, #edu .carousel-control-prev-icon {
+#edu .carousel-control-next-icon,
+#edu .carousel-control-prev-icon {
   background: none;
   font-size: 48px;
   line-height: 1;
@@ -549,7 +568,9 @@ section {
   #edu p {
     width: 60%;
   }
-  #edu .carousel-control-prev, #edu .carousel-control-next {
+
+  #edu .carousel-control-prev,
+  #edu .carousel-control-next {
     width: 5%;
   }
 }
@@ -558,6 +579,7 @@ section {
   #edu .carousel-container {
     height: 90vh;
   }
+
   #edu h2 {
     font-size: 28px;
   }
@@ -595,6 +617,7 @@ section {
   0% {
     transform: translate(85px, 0%);
   }
+
   100% {
     transform: translate(-90px, 0%);
   }
@@ -604,6 +627,7 @@ section {
   0% {
     transform: translate(85px, 0%);
   }
+
   100% {
     transform: translate(-90px, 0%);
   }
@@ -613,6 +637,7 @@ section {
   0% {
     transform: translate(-90px, 0%);
   }
+
   100% {
     transform: translate(85px, 0%);
   }
@@ -622,6 +647,7 @@ section {
   0% {
     transform: translate(-90px, 0%);
   }
+
   100% {
     transform: translate(85px, 0%);
   }
@@ -631,6 +657,7 @@ section {
   0% {
     transform: translate(-90px, 0%);
   }
+
   100% {
     transform: translate(85px, 0%);
   }
@@ -640,6 +667,7 @@ section {
   0% {
     transform: translate(-90px, 0%);
   }
+
   100% {
     transform: translate(85px, 0%);
   }
@@ -675,7 +703,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #2f9c84;
+  background: #1c3172;
   color: #fff;
   padding: 5px 15px;
   display: inline-block;
@@ -741,7 +769,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #2f9c84;
+  background-color: #1c3172;
 }
 
 /*--------------------------------------------------------------
@@ -814,7 +842,7 @@ section {
 }
 
 .projects .iconbox-color:hover .icon path {
-  fill: #2f9c84;
+  fill: #1c3172;
 }
 
 /*--------------------------------------------------------------
@@ -903,7 +931,7 @@ section {
   font-weight: 600;
 }
 
-.contact .email-form .error-message br + br {
+.contact .email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -936,13 +964,15 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .email-form input, .contact .email-form textarea {
+.contact .email-form input,
+.contact .email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .email-form input::focus, .contact .email-form textarea::focus {
+.contact .email-form input::focus,
+.contact .email-form textarea::focus {
   background-color: #ffb727;
 }
 
@@ -964,13 +994,13 @@ section {
 }
 
 .contact .email-form button[type="submit"]:hover {
-  background: #2f9c84;
+  background: #1c3172;
 }
 
 #thanks {
   display: none;
-  background: #2f9c84;
-  background-color: #2f9c84;
+  background: #1c3172;
+  background-color: #1c3172;
   color: #fff;
   border-radius: 10px;
 }
@@ -983,6 +1013,7 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -992,6 +1023,7 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
